@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ListNodeTest {
     private ListNode listNode;
     private static final int[] ADD_DATA = {1,3,4,5,7,9};
-    private static final boolean[] CONTAINS_DATA = {true, false};
+    private static final boolean[] CONTAINS_DATA = {true, false, true};
     private static List<Integer> acc_data;
 
     @BeforeEach
@@ -55,12 +55,12 @@ class ListNodeTest {
 
     @Test
     void contains() {
-        boolean[] result = new boolean[2];
-        result[0] = listNode.contains(listNode,new ListNode(9));
+        boolean[] result = new boolean[3];
+        result[0] = listNode.contains(listNode,new ListNode(9));//last case : next is null
         result[1] = listNode.contains(listNode,new ListNode(10));
-
-        for(int i=0;i<acc_data.size();i++) {
-            Assertions.assertEquals(CONTAINS_DATA[i],result[i]);
+        result[2] = listNode.contains(listNode,new ListNode(7));//mid case : next value must be identified.
+        for (int i = 0; i < CONTAINS_DATA.length; i++) {
+            Assertions.assertEquals(CONTAINS_DATA[i], result[i]);
         }
     }
 }

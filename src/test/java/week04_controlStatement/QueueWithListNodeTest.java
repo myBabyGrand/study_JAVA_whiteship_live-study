@@ -21,9 +21,9 @@ class QueueWithListNodeTest {
     void add() {
         Queue.add(9);
         int i=0;
-        ListNode listNode = Queue.listNode;
+        ListNode listNode = Queue.head;
         while(listNode != null){
-            Assertions.assertEquals(PUSH_DATA[i],Queue.listNode.data);
+            Assertions.assertEquals(PUSH_DATA[i],Queue.head.data);
             listNode = listNode.next;
         }
     }

@@ -1,26 +1,26 @@
 package week04_controlStatement;
 
 public class QueueWithListNode implements Queue{
-    ListNode listNode;
+    ListNode head;
     int tail;
     public QueueWithListNode(){
-        this.listNode = null;
+        this.head = null;
         this.tail = -1;
     }
     @Override
     public void add(int data) {
         ListNode inputNode = new ListNode(data);
-        if(listNode == null){
-            listNode = new ListNode(data);
+        if(head == null){
+            head = new ListNode(data);
             tail++;
         }else{
-            listNode = listNode.add(listNode, inputNode, ++tail);
+            head = head.add(head, inputNode, ++tail);
         }
     }
 
     @Override
     public int peek() {
-        return listNode.data;
+        return head.data;
     }
 
     @Override
@@ -29,10 +29,10 @@ public class QueueWithListNode implements Queue{
             System.out.println("Empty");
             return tail;
         }
-        ListNode rtnListNode = listNode.remove(this.listNode, 0);
+        ListNode rtnListNode = head.remove(this.head, 0);
         tail--;
 //        listNode = listNode.present;
-        listNode = listNode.next;
+        head = head.next;
         return rtnListNode.data;
     }
 }
