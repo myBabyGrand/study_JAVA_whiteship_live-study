@@ -1,10 +1,11 @@
-package week08_interface;
+package week08_Interface;
 
 public class HelloJoinMember implements JoinGroup, JoinMember{
 
     @Override
     public void preJoin() {
         JoinGroup.super.preJoin();
+        System.out.println("=============");
         JoinMember.super.preJoin();
     }
 

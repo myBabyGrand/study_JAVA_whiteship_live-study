@@ -1,4 +1,4 @@
-package week08_interface;
+package week08_Interface;
 
 public interface JoinMember {
     default void preJoin(){
