@@ -1,4 +1,4 @@
-package week08_Interface;
+package week08_interface;
 
 interface Skills{
     default void q_skill(){
