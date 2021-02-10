@@ -2,7 +2,7 @@ package week09_exception;
 
 import java.io.IOException;
 
-public class exceptionTest05 {
+public class ExceptionTest05 {
     public static void main(String[] args) {
         try{
             chinedExceptionTest(null);

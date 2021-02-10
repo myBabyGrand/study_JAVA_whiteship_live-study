@@ -1,6 +1,6 @@
 package week09_exception;
 
-public class exceptionTest04 {
+public class ExceptionTest04 {
     public static void main(String[] args) {
         try{
             testMethod1();

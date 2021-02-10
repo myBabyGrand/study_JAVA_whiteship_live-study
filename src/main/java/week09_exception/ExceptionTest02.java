@@ -2,7 +2,7 @@ package week09_exception;
 
 import java.util.LinkedList;
 
-public class exceptionTest02 {
+public class ExceptionTest02 {
     public static void main(String[] args) {
         LinkedList<String> list;
         try{

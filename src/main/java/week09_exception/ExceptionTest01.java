@@ -1,6 +1,6 @@
 package week09_exception;
 
-public class exceptionTest01 {
+public class ExceptionTest01 {
     public static void main(String[] args) {
         String name = "Ashe";
         System.out.println(name+" "+testMethod(name));

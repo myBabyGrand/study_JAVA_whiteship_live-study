@@ -1,8 +1,6 @@
 package week09_exception;
 
-import java.io.IOException;
-
-public class exceptionTest06 {
+public class ExceptionTest06 {
     public static void main(String[] args) throws ParamNullValuePosition {
         String chapion = "Ashe";
         String position = "Juggler";
